@@ -1,5 +1,27 @@
 # nvim
 
+Install Nerd fonts:
+https://www.nerdfonts.com/font-downloads?ref=geekbits.io
+
+> After you installed the nerd font you have to select it in the preferences of your terminal or iTerm Application.
+
+Install neovim
+
+```cli
+# Mac:
+$ brew install neovim
+
+# Arch:
+$ sudo pacman -Syu neovim
+
+$ cd ~
+$ cd .config
+$ git clone https://github.com/imi187/nvim.git
+
+$ cd nvim
+$ nvim
+```
+
 ### Shortcuts
 
 #### Basic Movements
