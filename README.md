@@ -2,10 +2,6 @@
 
 ### Shortcuts
 
-[N] = Normal mode
-[E] = Edit model
-[V] = Visual mode
-
 #### Basic Movements
 
 | Shortcuts | Description                      |
