@@ -81,6 +81,10 @@ return {
 		mason_lspconfig.setup_handlers({
 			-- default handler for installed servers
 			function(server_name)
+				if server_name == "tsserver" then
+					server_name = "ts_ls"
+				end
+
 				lspconfig[server_name].setup({
 					capabilities = capabilities,
 				})
@@ -141,14 +145,12 @@ return {
 				})
 			end,
 			["golangci_lint_ls"] = function()
-				-- configure graphql language server
 				lspconfig["golangci_lint_ls"].setup({
 					capabilities = capabilities,
 					filetypes = { "go", "gomod" },
 				})
 			end,
 			["gopls"] = function()
-				-- configure graphql language server
 				lspconfig["gopls"].setup({
 					capabilities = capabilities,
 					filetypes = { "go", "gomod", "gowork", "gotmpl" },
