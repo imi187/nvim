@@ -4,6 +4,7 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
+		"nelsyeung/twig.vim",
 		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
@@ -154,6 +155,12 @@ return {
 				lspconfig["gopls"].setup({
 					capabilities = capabilities,
 					filetypes = { "go", "gomod", "gowork", "gotmpl" },
+				})
+			end,
+			["intelephense"] = function()
+				lspconfig["intelephense"].setup({
+					capabilities = capabilities,
+					filetypes = { "php" },
 				})
 			end,
 		})

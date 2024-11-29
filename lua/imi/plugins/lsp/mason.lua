@@ -39,6 +39,7 @@ return {
 				"pyright",
 				"golangci_lint_ls",
 				"gopls",
+				"intelephense",
 			},
 		})
 
@@ -51,6 +52,7 @@ return {
 				"pylint",
 				"eslint_d",
 				"golangci-lint",
+				"php-cs-fixer",
 			},
 		})
 	end,
